@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Incrível</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Aprender, você precisa, meu jovem.</h1>
+        <img src="{{ url_for('static', filename='yoda.jpg') }}" alt="Yoda" class="yoda-image">
+        <p>Mais jogos, jogar você precisa. No início de sua caminhada Jedi ainda está, mas não se preocupe. Jogue novamente, e com você, a força estará.</p>
+        <p>Seu score foi: <strong>{{ score }}</strong></p>
+
+        <!-- Botão que retorna para o menu -->
+        <div class="button-container">
+            <a href="{{ url_for('menu') }}">
+                <button class="btn btn-paz">Voltar ao Menu</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

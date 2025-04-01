@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 10</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Que jogo é este personagem ou cena?</h1>
+        <img src="{{ url_for('static', filename='10.jpg') }}" alt="Imagem do Jogo" class="game-image">
+        <form method="post">
+            <div class="button-container">
+        <button class="btn" type="submit" name="option" value="0">Dead Cells</button>
+        <button class="btn" type="submit" name="option" value="1">Ori and the Will of the Wisps</button>
+        <button class="btn" type="submit" name="option" value="2">A Memoir Blue</button>
+        <button class="btn" type="submit" name="option" value="3">Islets</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

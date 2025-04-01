@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Pergunta 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>De que jogo é este personagem ou cena?</h1>
+    <img src="{{ url_for('static', filename='2.jpg') }}" alt="Imagem do Jogo" class="game-image">
+    <form method="post">
+        <div class="button-container">
+            <button type="submit" name="option" value="0">Enigma do Medo</button>
+            <button type="submit" name="option" value="1">Horror Clown</button>
+            <button type="submit" name="option" value="2">The Coma</button>
+            <button type="submit" name="option" value="3">That's Not my Neighbor</button>
+        </div>
+    </form>
+</body>
+</html>

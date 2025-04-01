@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 5</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Que jogo é este personagem ou cena?</h1>
+        <img src="{{ url_for('static', filename='5.JPG') }}" alt="Imagem do Jogo" class="game-image">
+        <form method="post">
+            <div class="button-container">
+                <button type="submit" name="option" value="0" class="btn btn-paz">Rambo</button>
+                <button type="submit" name="option" value="1" class="btn btn-paz">Blazing Chrome</button>
+                <button type="submit" name="option" value="2" class="btn btn-paz">Metal Slug: Anthology</button>
+                <button type="submit" name="option" value="3" class="btn btn-paz">Guns, Gore and Cannoli 2</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

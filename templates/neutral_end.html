@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Incrível</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Você não foi mal, mas também não foi bem!</h1>
+        <img src="{{ url_for('static', filename='matrix.jpg') }}" alt="Matrix" class="game-image">
+        <p>Você acertou algumas questões, mas talvez te falte ir um pouco mais adentro na Matrix.</p>
+        <p>Seu score foi: <strong>{{ score }}</strong></p>
+
+
+        <!-- Botão para voltar ao menu -->
+        <div class="button-container">
+            <a href="{{ url_for('menu') }}">
+                <button class="btn btn-paz">Voltar ao Menu</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Incrível</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Você foi incrível!</h1>
+        <img src="{{ url_for('static', filename='star.jpg') }}" alt="Imagem Star Trek" class="game-image">
+        <p>O Spock reconhece seu nível de expertise em jogos e te deseja uma vida longa e próspera!</p>
+        <p>Seu score foi: <strong>{{ score }}</strong></p>
+
+        <!-- Botão para voltar ao menu -->
+        <div class="button-container">
+            <a href="{{ url_for('menu') }}">
+                <button class="btn btn-paz">Voltar ao Menu</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
